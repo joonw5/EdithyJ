@@ -1,0 +1,98 @@
+<div id="cor"><div class="corazon izquierda cara arriba"></div><div class="corazon centro"></div><div class="texto">Edith<br /><span>y</span><br />Joel</div><div class="corazon derecha cara"></div></div>
+
+<link rel="stylesheet" href="styles.css">
+
+<style>
+  body{
+    background: ligthburlywood;
+      font-family: comic sans ms, sans-serif;
+
+  }
+.texto {position:absolute; margin:125px 180px; z-index:9; font-size:50px; text-align:center; color:#FFF;line-height:40px;font-weight:bold;
+text-shadow: -2px 0 #D5093C, 0 2px #D5093C, 2px 0 #D5093C, 0 -1px #D5093C, -2px 2px 3px #D5093C;
+-webkit-animation: justBeat 0.7s ease 0s infinite normal;
+    -moz-animation: justBeat 0.7s ease 0s infinite normal;
+    animation: justBeat 0.7s ease 0s infinite normal;
+}
+
+@-webkit-keyframes beat {
+    0% {-webkit-transform: scale(1) rotate(225deg); -webkit-box-shadow:0 0 40px rgba(213,9,60,1);}
+    50% {-webkit-transform: scale(1.1) rotate(225deg); -webkit-box-shadow:0 0 70px rgba(213,9,60,0.6);}
+    100% {-webkit-transform: scale(1) rotate(225deg); -webkit-box-shadow:0 0 40px rgba(213,9,60,1);}
+}
+@-moz-keyframes beat {
+    0% {-moz-transform: scale(1) rotate(225deg); -moz-box-shadow:0 0 40px rgba(213,9,60,1);}
+    50% {-moz-transform: scale(1.1) rotate(225deg); -moz-box-shadow:0 0 70px rgba(213,9,60,0.6);}
+    100% {-moz-transform: scale(1) rotate(225deg); -moz-box-shadow:0 0 40px rgba(213,9,60,1);}
+}
+@keyframes beat {
+    0% {transform: scale(1) rotate(225deg); box-shadow:0 0 40px #d5093c;}
+    50% {transform: scale(1.1) rotate(225deg); box-shadow:0 0 70px #d5093c;}
+    100% {transform: scale(1) rotate(225deg); box-shadow:0 0 40px #d5093c;}
+}
+
+    @-webkit-keyframes justBeat {
+    0% {-webkit-transform: scale(1);  -webkit-box-shadow:0 0 40px rgba(213,9,60,1);}
+    50% {-webkit-transform: scale(1.1);  -webkit-box-shadow:0 0 70px rgba(213,9,60,0.6);}
+    100% {-webkit-transform: scale(1);  -webkit-box-shadow:0 0 40px rgba(213,9,60,1);}
+}
+@-moz-keyframes justBeat {
+    0% {-moz-transform: scale(1);  -moz-box-shadow:0 0 40px rgba(213,9,60,1);}
+    50% {-moz-transform: scale(1.1);  -moz-box-shadow:0 0 70px rgba(213,9,60,0.6);}
+    100% {-moz-transform: scale(1);  -moz-box-shadow:0 0 40px rgba(213,9,60,1);}
+}
+@keyframes justBeat {
+    0% {transform: scale(1);  box-shadow:0 0 40px #d5093c;}
+    50% {transform: scale(1.1);  box-shadow:0 0 70px #d5093c;}
+    100% {transform: scale(1); box-shadow:0 0 40px #d5093c;}
+}                  
+#cor {
+    position:relative;
+    width:500px;
+    height:450px;
+    margin:0 auto;
+}
+.corazon {
+    position:absolute;
+    z-index:2;
+    background: -moz-linear-gradient(-180deg,  #F50A45 0%, #d5093c 40%);
+    background: -webkit-gradient(linear, right 50%, left 50%, color-stop(0%,#F50A45), color-stop(40%,#d5093c));
+    background: -webkit-linear-gradient(-180deg,  #F50A45 0%,#d5093c 40%);
+    background: linear-gradient(-180deg,  #F50A45 0%,#d5093c 40%);
+    -webkit-animation: beat 0.7s ease 0s infinite normal;
+    -moz-animation: beat 0.7s ease 0s infinite normal;
+    animation: beat 0.7s ease 0s infinite normal;
+}
+.corazon.centro {
+    background: -moz-linear-gradient(-45deg,  #B80734 0%, #d5093c 40%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#B80734), color-stop(40%,#d5093c));
+    background: -webkit-linear-gradient(-45deg,  #B80734 0%,#d5093c 40%);
+    background: linear-gradient(-45deg,  #B80734 0%,#d5093c 40%);
+}
+.corazon.arriba {
+    z-index:3;
+}
+.cara {
+    top:50px;
+    width:220px;
+    height:220px;
+    -moz-border-radius: 220px;
+    -webkit-border-radius: 220px;
+    border-radius: 220px;
+}
+.centro {
+    width:210px;
+    height:210px;
+    bottom:100px;
+    left:145px;
+    font-size:0;
+    text-indent:-9999px;
+}
+.izquierda {
+    left:62px;
+}
+.derecha {
+    right:62px;
+}
+.texto span {font-size:25px; }
+</style>
